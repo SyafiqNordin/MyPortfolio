@@ -21,6 +21,34 @@
         height: auto;
     }
 
+    .longer-intro {
+        background-color: #673ab7;
+        padding-top: 8%;
+        padding-bottom: 15%;
+    }
+
+    .brief-intro {
+        width: 50%;
+    }
+
+    .angular-text {
+        background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(148, 2, 2));
+        -webkit-background-clip: text;
+        color: transparent
+    }
+
+    .typescript-text {
+        background-image: linear-gradient(to right, rgb(15, 53, 221), rgb(4, 16, 92));
+        -webkit-background-clip: text;
+        color: transparent
+    }
+
+    .ionic-text {
+        background-image: linear-gradient(to right, rgb(61, 236, 221), rgb(2, 116, 106));
+        -webkit-background-clip: text;
+        color: transparent
+    }
+
     @media (max-width: 576px) {
         .logo {
             width: 2.5rem;
@@ -28,6 +56,10 @@
 
         .profile-img {
             width: 8rem; 
+        }
+
+        .brief-intro {
+            width: 100%;
         }
     }
 
@@ -38,6 +70,16 @@
 
         .profile-img {
             width: 10rem;
+        }
+
+        .brief-intro {
+            width: 75%;
+        }
+    }
+
+    @media (min-width: 992px) and (max-width: 1400px) {
+        .brief-intro {
+            width: 75%;
         }
     }
 }
