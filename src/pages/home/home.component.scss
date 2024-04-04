@@ -4,6 +4,11 @@
         height: auto;
     }
 
+    .resume:hover {
+        cursor: pointer;
+        color: #673ab7;
+    }
+
     .name-text {
         background-image: linear-gradient(to right, #673ab7, #24035e);
         -webkit-background-clip: text;
