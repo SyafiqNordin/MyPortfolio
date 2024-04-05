@@ -9,12 +9,34 @@
                 <h5 class="no-margin">Say Hello</h5>
             </button>
         </div>
-        <div class="col-3 d-flex d-lg-none pe-4 justify-content-end">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="auto" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-            </svg>
-        </div>
+        <ng-container *ngIf="!menuButtonClicked">
+            <div class="col-3 d-flex d-lg-none pe-4 justify-content-end" (click)="openMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="auto" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </div>
+        </ng-container>
+        <ng-container *ngIf="menuButtonClicked">
+            <div class="col-3 d-flex d-lg-none pe-4 justify-content-end" (click)="closeMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="auto" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                  </svg>
+            </div>
+        </ng-container>
     </section>
+
+    <ng-container *ngIf="menuButtonClicked">
+        <section class="d-flex flex-column gap-3 pt-4 pb-5">
+            <div class="d-flex flex-row justify-content-center">
+                <h6 class="no-margin resume" (click)="openResume()">Resume</h6>
+            </div>
+            <div class="d-flex flex-row justify-content-center">
+                <button type="button" class="btn btn-outline-primary">
+                    <h6 class="no-margin">Say Hello</h6>
+                </button>
+            </div>
+        </section>
+    </ng-container>
 
     <section class="container pt-5 d-flex flex-column">
         <div class="pt-md-4 d-flex flex-column flex-md-row justify-content-center">
