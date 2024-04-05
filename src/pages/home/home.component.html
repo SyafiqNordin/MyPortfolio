@@ -82,4 +82,84 @@
             </div>
         </div>
     </section>
+
+    <section class="container">
+        <div class="row justify-content-center attr-cards">
+            <div class="py-5 px-5 d-flex flex-column col-10 col-xl-4 gamer-card">
+                <div class="d-flex flex-row justify-content-center">
+                    <img src="assets/images/gamer-icon.svg" class="gamer-developer-traveler-icons">
+                </div>
+                <div class="d-flex flex-row justify-content-center pt-4">
+                    <h5 class="no-margin fs-4 bold-600">Gamer</h5>
+                </div>
+                <div class="d-flex flex-row justify-content-center pt-4 pb-4">
+                    <h6 class="no-margin text-center">Playing games with my circle is one of the best ways for me to get rid of stress.</h6>
+                </div>
+                <div class="d-flex flex-row justify-content-center pt-4">
+                    <h6 class="no-margin text-center bold-600 primary-color-text">Types of game that I enjoy playing:</h6>
+                </div>
+                <div class="d-flex flex-row justify-content-center pt-2 pb-4">
+                    <h6 class="no-margin text-center">PC, PS, Competitive FPS, Battle royale, Action-adventure</h6>
+                </div>
+                <div class="d-flex flex-row justify-content-center pt-4">
+                    <h6 class="no-margin text-center bold-600 primary-color-text">Games that I played the most:</h6>
+                </div>
+                <div class="pt-2">
+                    <ng-container *ngFor="let game of games">
+                        <h6 class="no-margin text-center pt-2">{{ game }}</h6>
+                    </ng-container>
+                </div>
+            </div>
+            <div class="py-5 px-5 d-flex flex-column col-10 col-xl-4 frontend-card">
+                <div class="d-flex flex-row justify-content-center">
+                    <img src="assets/images/frontend-icon.svg" class="gamer-developer-traveler-icons">
+                </div>
+                <div class="d-flex flex-row justify-content-center pt-4">
+                    <h5 class="no-margin fs-4 bold-600">Frontend Developer</h5>
+                </div>
+                <div class="d-flex flex-row justify-content-center pt-4 pb-4">
+                    <h6 class="no-margin text-center">My passion lies in translating UI designs into tangible, creative realities.</h6>
+                </div>
+                <div class="d-flex flex-row justify-content-center pt-4">
+                    <h6 class="no-margin text-center bold-600 primary-color-text">Languages I speak:</h6>
+                </div>
+                <div class="d-flex flex-row justify-content-center pt-2 pb-4">
+                    <h6 class="no-margin text-center">HTML5, SCSS, Angular, Angular Material, TypeScript, Ionic, Git</h6>
+                </div>
+                <div class="d-flex flex-row justify-content-center pt-4">
+                    <h6 class="no-margin text-center bold-600 primary-color-text">Dev Tools:</h6>
+                </div>
+                <div class="pt-2">
+                    <ng-container *ngFor="let tool of devTools">
+                        <h6 class="no-margin text-center pt-2">{{ tool }}</h6>
+                    </ng-container>
+                </div>
+            </div>
+            <div class="py-5 px-5 d-flex flex-column col-10 col-xl-4 traveler-card">
+                <div class="d-flex flex-row justify-content-center">
+                    <img src="assets/images/travel-icon.svg" class="gamer-developer-traveler-icons">
+                </div>
+                <div class="d-flex flex-row justify-content-center pt-4">
+                    <h5 class="no-margin fs-4 bold-600">Traveler</h5>
+                </div>
+                <div class="d-flex flex-row justify-content-center pt-4 pb-4">
+                    <h6 class="no-margin text-center">Seeing the beauty of this world in different places opens my mind.</h6>
+                </div>
+                <div class="d-flex flex-row justify-content-center pt-4">
+                    <h6 class="no-margin text-center bold-600 primary-color-text">Malaysian states I have went to:</h6>
+                </div>
+                <div class="d-flex flex-row justify-content-center pt-2 pb-4">
+                    <h6 class="no-margin text-center">All states except for Kelantan and Sarawak.</h6>
+                </div>
+                <div class="d-flex flex-row justify-content-center pt-4">
+                    <h6 class="no-margin text-center bold-600 primary-color-text">Countries that I've went to:</h6>
+                </div>
+                <div class="pt-2">
+                    <ng-container *ngFor="let country of countries">
+                        <h6 class="no-margin text-center pt-2">{{ country }}</h6>
+                    </ng-container>
+                </div>
+            </div>
+        </div>
+    </section>
 </section>
