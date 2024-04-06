@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class HomeComponent {
   public menuButtonClicked = false;
   public games: string[] = ['Valorant', 'Apex Legends', 'FIFA', 'UFC', 'GTA', 'Assassins Creed', 'Far Cry'];
-  public devTools: string[] = ['BitBucket', 'Github', 'Jira', 'Visual Studio Code', 'Azure DevOps', 'Karma', 'Jasmine'];
+  public devTools: string[] = ['BitBucket', 'Git', 'Jira', 'Visual Studio Code', 'Azure DevOps', 'Karma', 'Jasmine'];
   public countries: string[] = ['France', 'China', 'Vietnam', 'Singapore', 'Saudi', 'Thailand', 'Indonesia'];
 
   public openResume(): void {
