@@ -87,6 +87,11 @@
         background-color: #ffff;
     }
 
+    .companies-logo {
+        width: 80%;
+        height: auto;
+    }
+
     @media (max-width: 576px) {
         .logo {
             width: 2.5rem;
@@ -131,6 +136,11 @@
             border-top-right-radius: 0;
             border-bottom-right-radius: 20px;
             border-bottom-left-radius: 20px;
+        }
+
+        .companies-logo {
+            width: 90%;
+            height: auto;
         }
     }
 
