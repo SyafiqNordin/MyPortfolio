@@ -22,4 +22,8 @@ export class HomeComponent {
   public closeMenu(): void {
     this.menuButtonClicked = false;
   }
+
+  public sendFeedback(): void {
+    window.open('https://ngl.link/syxfqn');
+  }
 }
