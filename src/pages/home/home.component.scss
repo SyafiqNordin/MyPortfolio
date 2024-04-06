@@ -92,6 +92,16 @@
         height: auto;
     }
 
+    .projects {
+        background-color: #673ab7;
+        padding-top: 8%;
+        padding-bottom: 20%;
+    }
+
+    .projects-intro {
+        width: 50%;
+    }
+
     @media (max-width: 576px) {
         .logo {
             width: 2.5rem;
@@ -142,6 +152,16 @@
             width: 90%;
             height: auto;
         }
+
+        .projects-intro {
+            width: 100%;
+        }
+
+        .projects {
+            background-color: #673ab7;
+            padding-top: 8%;
+            padding-bottom: 50%;
+        }
     }
 
     @media (min-width: 576px) and (max-width: 992px) {
@@ -182,10 +202,18 @@
             border-bottom-right-radius: 20px;
             border-bottom-left-radius: 20px;
         }
+
+        .projects-intro {
+            width: 75%;
+        }
     }
 
     @media (min-width: 992px) and (max-width: 1400px) {
         .brief-intro {
+            width: 75%;
+        }
+
+        .projects-intro {
             width: 75%;
         }
     }
