@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ClipboardModule } from '@angular/cdk/clipboard';
-import { PopoverModule } from '@ngx-popovers/popover';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
