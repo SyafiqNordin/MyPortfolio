@@ -35,6 +35,22 @@ export class HomeComponent {
       setTimeout(() => {
           this.showPopover = false;
       }, 2000);
+    }
   }
+
+  public openLinkedin(): void {
+    window.open('https://www.linkedin.com/in/muhammad-syafiq-a4b25720b/');
+  }
+
+  public openGithub(): void {
+    window.open('https://github.com/SyafiqNordin');
+  }
+  
+  public openInstagram(): void {
+    window.open('https://www.instagram.com/syxfqn/');
+  }
+
+  public openTwitter(): void {
+    window.open('https://twitter.com/xilonzx');
   }
 }
