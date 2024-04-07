@@ -308,5 +308,37 @@
                 </div>
             </div>
         </div>
+
+        <div class="d-flex flex-column gap-5 pb-5">
+            <div>
+                <h2 class="no-margin text-center bold-600">Interested in collaborating with me?</h2>
+            </div>
+            <div class="d-none d-md-flex flex-row justify-content-center align-items-center gap-2">
+                <h4 class="no-margin text-center bold-400">Send an email to</h4>
+                <button type="button" class="btn btn-outline-primary d-flex flex-row align-items-center gap-2" [cdkCopyToClipboard]="'msyaf0911@gmail.com'" (cdkCopyToClipboardCopied)="onClipboardCopy($event)">
+                    <h5 class="no-margin">msyaf0911&#64;gmail.com</h5>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-copy" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
+                    </svg>
+                </button>
+                <div *ngIf="showPopover">
+                    <p class="no-margin" style="background-color: #EBF5FF; border-radius: 5px; padding: 3px;">Email Copied!</p>
+                </div>
+            </div>
+            <div class="d-flex d-md-none flex-column gap-2">
+                <h4 class="no-margin text-center bold-400">Send an email to</h4>
+                <div class="d-flex flex-row justify-content-center">
+                    <button type="button" class="btn btn-outline-primary d-flex flex-row justify-content-center align-items-center gap-2" [cdkCopyToClipboard]="'msyaf0911@gmail.com'" (cdkCopyToClipboardCopied)="onClipboardCopy($event)">
+                        <h5 class="no-margin">msyaf0911&#64;gmail.com</h5>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-copy" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div *ngIf="showPopover" class="d-flex flex-row justify-content-center">
+                    <p class="no-margin" style="background-color: #EBF5FF; border-radius: 5px; padding: 3px;">Email Copied!</p>
+                </div>
+            </div>
+        </div>
     </section>
 </section>

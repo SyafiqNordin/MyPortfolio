@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   public menuButtonClicked = false;
+  public showPopover = false;
   public games: string[] = ['Valorant', 'Apex Legends', 'FIFA', 'UFC', 'GTA', 'Assassins Creed', 'Far Cry'];
   public devTools: string[] = ['BitBucket', 'Git', 'Jira', 'Visual Studio Code', 'Azure DevOps', 'Karma', 'Jasmine'];
   public countries: string[] = ['France', 'China', 'Vietnam', 'Singapore', 'Saudi', 'Thailand', 'Indonesia'];
@@ -25,5 +26,15 @@ export class HomeComponent {
 
   public sendFeedback(): void {
     window.open('https://ngl.link/syxfqn');
+  }
+
+  public onClipboardCopy(successful: boolean): void {
+    this.showPopover = successful;
+
+    if (successful) {
+      setTimeout(() => {
+          this.showPopover = false;
+      }, 2000);
+  }
   }
 }
