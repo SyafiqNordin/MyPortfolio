@@ -16,7 +16,6 @@
     }
 
     .profile-img {
-        border-radius: 100%;
         width: 15rem;
         height: auto;
     }
@@ -69,8 +68,13 @@
         background-color: #ffff;
     }
 
-    .companies-logo {
-        width: 80%;
+    .companies-logo-top {
+        max-width: 200px !important;
+        height: auto;
+    }
+
+    .companies-logo-bottom {
+        max-width: 150px !important;
         height: auto;
     }
 
@@ -89,7 +93,7 @@
     }
 
     .projects-logo {
-        width: 60%;
+        max-width: 60%;
         height: auto;
     }
 
@@ -151,8 +155,13 @@
             border-bottom-left-radius: 20px;
         }
 
-        .companies-logo {
-            width: 90%;
+        .companies-logo-top {
+            max-width: 150px !important;
+            height: auto;
+        }
+
+        .companies-logo-bottom {
+            max-width: 120px !important;
             height: auto;
         }
 
