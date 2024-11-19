@@ -13,7 +13,7 @@ export class HomeComponent {
   public countries: string[] = ['France', 'China', 'Vietnam', 'Singapore', 'Saudi', 'Thailand', 'Indonesia'];
 
   public openResume(): void {
-    window.open('https://drive.google.com/file/d/17d4fvZYEIObBb2RvuaOO1f5dDiz_UHla/view?usp=drive_link');
+    window.open('https://drive.google.com/file/d/1a80-JC-Ju4t2w5SbjUbbIoCkU_-Rgko8/view?usp=drive_link');
   }
 
   public openMenu(): void {
